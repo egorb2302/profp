@@ -1,0 +1,23 @@
+{
+  "name": "world-kitchen-training",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "node --watch --env-file=.env server/index.js",
+    "start": "node --env-file=.env server/index.js",
+    "db:init": "node --env-file=.env server/init.js",
+    "db:seed": "node --env-file=.env server/seed.js",
+    "build": "npm --prefix client run build"
+  },
+  "type": "module",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "ejs": "^7.0.2",
+    "express": "^5.3.0",
+    "express-session": "^1.19.0",
+    "multer": "^2.5.0",
+    "mysql2": "^3.24.6",
+    "sharp": "^0.35.5"
+  }
+}
