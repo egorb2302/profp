@@ -4,10 +4,10 @@
   "description": "",
   "private": true,
   "scripts": {
-    "dev": "node --watch --env-file=.env server/index.js",
-    "start": "node --env-file=.env server/index.js",
-    "db:init": "node --env-file=.env server/init.js",
-    "db:seed": "node --env-file=.env server/seed.js",
+    "dev": "node --watch --env-file=.env.example server/index.js",
+    "start": "node --env-file=.env.example server/index.js",
+    "db:init": "node --env-file=.env.example server/init.js",
+    "db:seed": "node --env-file=.env.example server/seed.js",
     "build": "npm --prefix client run build"
   },
   "type": "module",
